@@ -2,7 +2,9 @@
 <p>Name: <%= @trainer.name if @trainer.name %></p>
 <p>Email: <%= @trainer.email if @trainer.email %></p>
 
+<% if current_trainer.id == @trainer.id %>
 <%= button_to "Add new Pokemon!", new_pokemon_path, :class => "button medium", :method => :get %>
+<% end %>
 <% @pokemon_list.each do |curr_pokemon| %>
   <div>
     <% if curr_pokemon.ndex %>

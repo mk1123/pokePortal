@@ -19,7 +19,7 @@ class PokemonsController < ApplicationController
       @curr_pokemon.destroy
     end
 
-    redirect_to trainer_path(id: current_trainer.id)
+    redirect_to trainer_path(id: @curr_pokemon.trainer.id)
   end
 
   def new
