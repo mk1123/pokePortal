@@ -19,7 +19,7 @@ class PokemonsController < ApplicationController
       @curr_pokemon.destroy
     end
 
-    redirect_to trainer_path(id: @curr_pokemon.trainer.id)
+    redirect_to trainer_path(id: current_trainer.id)
   end
 
   def new
@@ -40,7 +40,7 @@ class PokemonsController < ApplicationController
       new_pokemon.save
       redirect_to trainer_path(id: current_trainer.id)
     else
-      flash.alert = new_pokemon.errors.full_messages.first
+      flash[:error] = new_pokemon.errors.full_messages.to_sentence
       redirect_to new_pokemon_path
     end
 

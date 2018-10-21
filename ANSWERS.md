@@ -25,8 +25,12 @@ I would call my Pokemon Manchu!
 
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
 
+I had the following code: `redirect_to trainer_path(id: current_trainer.id)`. This would properly redirect to the current trainer's landing page.
+
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
-  
+
+This line flashes on the screen the errors of the `@pokemon` object. If the `@pokemon` object was not validated properly, then it will have some errors, and these would be displayed on the screen before redirecting to the Pokemon creation page.
+
 # Give us feedback on the project and decal below!
 
 # Extra credit: Link your Heroku deployed app
