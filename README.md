@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
@@ -230,5 +229,3 @@ To flash the appropriate error, use the line `flash[:error] = @pokemon.errors.fu
 
 For easy deployment, reference [Heroku's deployment docs](https://devcenter.heroku.com/articles/getting-started-with-rails5). You'll need to look at the *Local Workstation Setup* part and the *Deploy your application to Heroku* part.
 =======
-# pokePortal
->>>>>>> c13faa0d6d5e3e6c8278675fb3272a72bfb9c0a0
