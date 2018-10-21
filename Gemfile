@@ -23,6 +23,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -32,14 +33,13 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rails_layout'
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.18'
   gem 'thin'
 end
 
